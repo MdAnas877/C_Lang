@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+     <style>
+        body{
+            background-color: black;
+        }
+
+        body:hover{
+            border-color: black;
+        }
+
+        label{
+            color: white;
+            font-size: 18px;
+        }
+
+        .parrent{
+            border: 3px solid white;
+            width: 180px;
+            height: 300px;
+            margin: auto;
+            padding : 50px 50px 150px 50px;
+            border-radius: 5px;
+            margin-top: 70px;
+        }
+
+        .parrent:hover{
+            /* border-color: aquamarine; */
+            box-shadow: 0 0 100px cyan   ;
+        }
+        input{
+            border-radius: 5px;
+        }
+
+        .data{
+            border: none;
+            border-bottom: 2px solid white;
+            background: transparent;
+            color: white;
+            padding: 5px;
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: border-bottom 0.3s ease-in-out;
+        }
+    
+       option{
+          color: black;
+       }
+     </style>
+</head>
+<body>
+    <form action="">
+            
+            <div class="parrent">
+            <tr>
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name</label><br><br>
+            <input type="text" class="data"><br>
+            </tr>
+            
+            <tr>
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email</label><br><br>
+                <input type="email" class="data"><br>
+            </tr>
+            
+            <tr>
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose DOB</label><br><br>
+                <input type="date" class="data"><br>
+            </tr>
+              
+            <tr>
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select Course</label><br> <br>
+                <select name="" id="" class="data">
+                    <option value="">SelectOption</option>
+                    <option value="">Java</option>
+                    <option value="">Python</option>
+                    <option value="">JavaScript</option>
+                    <option value="">React-JS</option>
+                    <option value="">C</option>
+                </select><br><br>
+            </tr>
+            
+            <tr>
+                <label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password</label><br>
+            <input type="password" class="data"><br>
+            </tr>
+        </div>
+    
+    </form>
+</body>
+</html>
